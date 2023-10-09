@@ -1,0 +1,28 @@
+{
+  "name": "gregorj/sympa_session",
+  "description": "A rough and ready php class to allow a php application to authenticate a user for wwsympa",
+  "type": "class",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Chris Hastie",
+      "email": "lists@oak-wood.co.uk",
+      "role": "initial developer",
+      "homepage": "https://assets.sympa.community/old-contribs/#how_to_share_sympa_session_with_other_php_applications"
+    },
+    {
+      "name": "Gregor J.",
+      "email":"gregor-j@users.noreply.github.com",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "GregorJ\\SympaSession\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4|^8.0"
+  }
+}
