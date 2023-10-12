@@ -42,7 +42,7 @@ final class SessionId
     public function setId(string $id): void
     {
         //10000000000000 - 99999999999999
-        if (!preg_match('^[1-9][0-9]{13}$', $id)) {
+        if (!preg_match('~^[1-9][0-9]{13}$~', $id)) {
             throw new InvalidSessionIdException(sprintf('Invalid session ID \'%s\'', $id));
         }
         $this->id = $id;
