@@ -15,8 +15,8 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "7.2"
           - "7.4"
+          - "8.1"
     env:
       CC_TEST_REPORTER_ID: "e7dd75a810d7876b5037d503d967cd0b9f76b0a99c721aeeb0dff6e8c43f5c91"
     name: "PHP ${{ matrix.php-version }}"
